@@ -1,6 +1,17 @@
 # whispercpp_py
 Python binding for whisper.cpp
 
+# Install
+
+* Install whisper.cpp: [https://github.com/ggerganov/whisper.cpp](https://github.com/ggerganov/whisper.cpp) first
+* make libwhisper.so
+
+# Run
+
+```shell
+LIBWHISPER_BASE_PATH=<Your libwhisper.so path> python test_lib.py
+```
+
 # Examples
 
 ## Wave
