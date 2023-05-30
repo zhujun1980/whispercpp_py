@@ -4,11 +4,18 @@ Python binding for whisper.cpp
 # Install
 
 * Install whisper.cpp: [https://github.com/ggerganov/whisper.cpp](https://github.com/ggerganov/whisper.cpp) first
-* make libwhisper.so
+    * make libwhisper.so
+    * cp libwhisper.so /usr/lib64
+* git clone https://github.com/zhujun1980/whispercpp_py.git
+    * python setup.py install
 
 # Run
 
 ```shell
+# libwhisper.so in system path
+python test_lib.py
+
+# libwhisper.so not in system path
 LIBWHISPER_BASE_PATH=<Your libwhisper.so path> python test_lib.py
 ```
 
